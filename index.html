@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yammy Food</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#"> <h1>Yammy Food</h1></a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#customers">Customers</a></li>
+        </ul>
+        <button type="button" class="burger" id="burger-button">&#9776;</button>
+        <button type="button" class="close-nav" id="close-button">
+          &#10005;
+        </button>
+      </nav>
+      <div class="header-icon">
+        <div class="cart-icon">
+          <a href="cart/cart.html"> <i class="bx bx-cart-alt"></i></a>
+          <span>0</span>
+        </div>
+        <a href="index.html" class="log-in">Log In</a>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>
+          Taste the Best, From Our Kitchen <br />
+          to Your Home.
+        </h1>
+        <p>
+          Exceptional Taste, Convenient Delivery – Bringing Restaurant Quality
+          to You!
+        </p>
+        <button><a href="menu.html" class="btn">Shop Now</a></button>
+      </div>
+    </section>
+
+    <section class="slider">
+      <h2>Menu Gallery</h2>
+      <div class="slider__container">
+        <div class="slider_btn" onclick="slider(-1)">
+          <p>&#60;</p>
+        </div>
+        <div class="slider__content">
+          <div class="slider__photos" id="container"></div>
+        </div>
+        <div class="slider_btn" onclick="slider(1)">
+          <p>&#62;</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/about1.jpeg" alt="" />
+      </div>
+      <div class="about-text">
+        <h2>Our History</h2>
+        <p>
+          Welcome to Yammy Food, where passion meets flavor! Our mission is to
+          provide an exceptional dining experience through delicious food, fresh
+          ingredients, and outstanding customer service. Whether you're craving
+          comfort food, international flavors, or something unique, we’ve got
+          something to satisfy every taste.
+        </p>
+        <p>
+          We believe in using locally sourced ingredients to create dishes that
+          are not only delicious but also support sustainable practices. Our
+          chefs are dedicated to crafting meals that tell a story—one bite at a
+          time.
+        </p>
+        <p>
+          At Yammy Food, we’re not just about food; we’re about creating
+          memories. Whether you're ordering in for a cozy night at home or
+          enjoying a meal with loved ones, we’re here to make every meal
+          special.
+        </p>
+        <p>
+          Thank you for choosing us, and we look forward to serving you soon!
+        </p>
+        <button><a href="#" class="btn">Learn More</a></button>
+      </div>
+    </section>
+
+    <section class="customers" id="customers">
+      <div class="heading">
+        <h2>Our customer's</h2>
+      </div>
+
+      <div class="customers-container">
+        <div class="box">
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <p>
+            “I absolutely love Yammy food! The food is always fresh and bursting
+            with flavor. I’ve ordered several times, and every meal has been
+            perfect. The delivery is quick, and the packaging is always neat. I
+            can tell they really care about their food and their customers.
+            Highly recommend!”
+          </p>
+          <h2>— Sarah L.</h2>
+          <img src="" alt="" />
+        </div>
+        <div class="box">
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <p>
+            “A friend recommended yammy food, and I’m so glad they did! The food
+            is always delicious, and they offer such a great variety. I
+            especially love their signature dishes—they never disappoint! It’s
+            become my go-to for a quick and satisfying meal. Amazing service and
+            quality every time.”
+          </p>
+          <h2>— James T.</h2>
+          <img src="" alt="" />
+        </div>
+
+        <div class="box">
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <p>
+            “I’ve been ordering from yammy food for a while now, and they’ve
+            never let me down. The meals are always tasty and beautifully
+            presented. The only reason I’m not giving 5 stars is because my last
+            delivery was a little late, but the food was still hot and
+            delicious. Definitely worth it—will continue to order!”
+          </p>
+          <h2>— Emily R.</h2>
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer-box">
+        <h2>Yammy Foods</h2>
+        <p>Connect With Us</p>
+        <p>On Social Media.</p>
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>View Guides</h3>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog Posts</a></li>
+          <li><a href="#">Our Branches</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+          <span><i class="bx bxs-map"></i>Tbilisi,Georgia</span>
+          <span><i class="bx bxs-phone"></i>+995 555 565 566</span>
+          <span><i class="bx bxs-envelope"></i>yammy@shop.com</span>
+        </div>
+      </div>
+    </section>
+    <div class="site-chat-icon" id="site-chat-icon">Chat</div>
+    <div class="site-chat-popup" id="site-chat-popup">
+      <div class="site-chat-header">
+        Chat
+        <span class="site-close-button" id="site-close-button">&times;</span>
+      </div>
+      <div class="site-chat-messages" id="site-chat-messages"></div>
+      <div class="site-chat-input">
+        <input
+          type="text"
+          id="site-user-input"
+          placeholder="Type your message..."
+        />
+        <button type="button" id="site-send-button">Send</button>
+      </div>
+      <div class="site-chat-question-buttons" id="site-chat-question-buttons">
+        <button
+          type="button"
+          class="question-button"
+          data-question="How to order?"
+        >
+          How to order?
+        </button>
+        <button
+          type="button"
+          class="question-button"
+          data-question="Delivery cost?"
+        >
+          Delivery cost?
+        </button>
+        <button
+          type="button"
+          class="question-button"
+          data-question="Do you have vegetarian dishes?"
+        >
+          Vegetarian dishes?
+        </button>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2025 by Yammy Food. Powered and secured by AWS</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

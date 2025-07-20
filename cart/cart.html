@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"> <h1>Yammy Food</h1></a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../menu.html">Menu</a></li>
+          <li><a href="../index.html">About Us</a></li>
+        </ul>
+        <button class="burger" id="burger-button">&#9776;</button>
+        <button class="close-nav" id="close-button">&#10005;</button>
+      </nav>
+      <div class="header-icon">
+        <div class="cart-icon">
+          <a href="cart.html"> <i class="bx bx-cart-alt"></i></a>
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+    <div class="products-container" ></div>
+    </header>
+
+    <h1>Cart</h1>
+    <div id="cartItems"></div>
+    <div class="total">
+      <div id="cartTotal"></div>
+    <button id="clearCart">Clear Cart</button>
+    <button id="checkout">Checkout</button>
+    </div>
+
+    <div class="checkout-popup">
+      <div class="checkout-popup-content">
+          <h2>How would you like to receive your order?</h2>
+          <button type="button" class="pickup-button">Pickup</button>
+          <button type="button" class="delivery-button">Delivery</button>
+  
+          <div class="delivery-address" style="display: none;">
+              <label for="address">Deliver to:</label>
+              <textarea id="address" rows="4" cols="50"></textarea>
+          </div>
+  
+          <button class="save-button">Save</button>
+      </div>
+  </div>
+    <div class="copyright">
+      <p>© 2025 by Yammy Food. Powered and secured by AWS</p>
+    </div>
+
+    <script src="cart.js"></script>
+  </body>
+</html>

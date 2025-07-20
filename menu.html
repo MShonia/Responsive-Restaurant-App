@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#"> <h1>Yammy Food</h1></a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="index.html">About Us</a></li>
+        </ul>
+        <button class="burger" id="burger-button">&#9776;</button>
+        <button class="close-nav" id="close-button">&#10005;</button>
+      </nav>
+      <div class="header-icon">
+        <div class="cart-icon">
+          <a href="cart/cart.html"> <i class="bx bx-cart-alt"></i></a>
+          <span>0</span>
+        </div>
+        <i class="bx bx-search-alt-2" id="search-icon"></i>
+      </div>
+      <div class="search-box" id="search-box">
+        <input type="search" name="" id="search-input" placeholder="Search here..." />
+      </div>
+    </div>
+    <div class="products-container" ></div>
+    </header>
+    <section class="menu" id="menu">
+      <h1>Categories</h1>
+      <section class="container">
+        <div class="filters">
+            <div class="category-filters">
+                <button data-category="all" class="category-filter active">All</button>
+                <button data-category="Salads" class="category-filter">Salads</button>
+                <button data-category="Soups" class="category-filter">Soups</button>
+                <button data-category="Chicken-Dishes" class="category-filter">Chicken Dishes</button>
+                <button data-category="Beef-Dishes" class="category-filter">Beef Dishes</button>
+                <button data-category="Seafood-Dishes" class="category-filter">Seafood Dishes</button>
+                <button data-category="Vegetable-Dishes" class="category-filter">Vegetable Dishes</button>
+                <button data-category="Bits&Bites" class="category-filter">Bits & Bites</button>
+                <button data-category="On-The-Side" class="category-filter">On The Side</button>
+            </div>
+            <div class="ingredient-filters">
+              <label><input type="checkbox" id="nuts"> Nuts</label>
+              <label><input type="checkbox" id="vegetarian"> Vegetarian</label>
+              <label>Spiciness: <input type="range" id="spiciness" min="0" max="4" value="0"></label>
+              <div class="filter-buttons">
+                  <button id="filter-button">Filter</button>
+                  <button id="reset-button">Reset</button>
+              </div>
+            </div>
+
+        </div>
+        <div class="menu-items">
+        </div>
+        <div id="cart-items"></div>
+        
+    </section>
+
+      <div id="card-container" class="card-container"></div>
+
+    </section>
+    <div class="popup-overlay"></div>
+<div id="popup" class="popup">
+    <span id="popup-close" class="popup-close">&times;</span>
+    <div id="popup-content"></div>
+</div>
+
+    <section class="footer">
+      <div class="footer-box">
+        <h2>Yammy Foods</h2>
+        <p>Connect with Us on Social Media.</p>
+        <p>Don't Miss Out on Our Offers!</p>
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Support</h3>
+       <ul>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Help & Support</a></li>
+    <li><a href="#">Return Policy</a></li>
+    <li><a href="#">Terms Of Use</a></li>
+</ul>
+      </div>
+      <div class="footer-box">
+        <h3>View Guides</h3>
+        <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+          <span><i class="bx bxs-map"></i>Tbilisi,Georgia</span>
+          <span><i class="bx bxs-phone"></i>+995 555 565 566</span>
+          <span><i class="bx bxs-envelope"></i>yammy@shop.com</span>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>© 2025 by Yammy Food. Powered and secured by AWS</p>
+    </div>
+
+    <script src="menu.js"></script>
+  </body>
+</html>
